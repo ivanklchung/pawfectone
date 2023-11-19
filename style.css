@@ -4,6 +4,10 @@ body {
     margin: 0;
 }
 
+#container {
+    text-align: center;
+}
+
 header {
     background-color: #333;
     color: #fff;
@@ -43,7 +47,7 @@ nav a:hover {
 }
 
 .login-page {
-    padding: 20px
+    padding: 20px;
 }
 
 .home-page {
@@ -182,4 +186,14 @@ nav a:hover {
 form {
     display: flex;
     flex-direction: column;
+}
+
+img.google {
+    width: 150px; /* Set the desired width */
+    height: auto; /* Maintain aspect ratio */
+}
+
+img.apple {
+    width: 150px; /* Set the desired width */
+    height: auto; /* Maintain aspect ratio */
 }
