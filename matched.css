@@ -15,16 +15,30 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 20px;
     margin-top: 250px;
 }
 
 .image-container img {
-    max-width: 50%; /* Adjust as needed */
-    height: auto;
+    width: 150px; /* Set a fixed width */
+    height: 150px; /* Set a fixed height */
+    object-fit: cover; /* Maintain aspect ratio while covering the box */
 }
 
 #matchedHeader {
     text-align: center;
     margin-top: 100px; /* Adjust the margin as needed */
+    animation: slamAnimation 1s ease-in-out; /* Define the animation */
+}
+
+/* Keyframes for the animation */
+@keyframes slamAnimation {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(2); /* Scale up to 120% at the midpoint of the animation */
+    }
+    100% {
+        transform: scale(1);
+    }
 }
