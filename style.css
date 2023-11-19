@@ -47,19 +47,103 @@ nav a:hover {
 }
 
 .home-page {
-    text-align: center;
+    display: flex;
+    flex: 1;
+    text-align: left;
+    padding: 20px;
+    height: 75vh;
+}
+
+.chats-area {
+    background-color: #f2f2f2;
+    width: 30%;
+    height: 100%;
     padding: 20px;
 }
 
+.chat-container {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+.chat-icon {
+    height: 50px;
+    width: 50px;
+    margin-right: 20px;
+}
+
+.chat-info-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.chat-name {
+    font-size: 18px;
+    font-weight: bold;
+    color: black;
+    margin: 0;
+}
+
+.chat-text {
+    font-size: 14px;
+    color: darkgrey;
+    margin: 0;
+}
+
+.swiping-area {
+    background-color: #e6e6e6;
+    width: 70%;
+    height: 100%;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    justify-content: space-between;
+
+}
+
+.profile-container {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
 .photo-container {
+    position: relative;
+    left: 20px;
+    width: 50%;
+}
+
+#profilePhoto {
+    width: 70%;
+    height: auto;
+    margin: auto;
     position: relative;
 }
 
 .buttons-container {
     position: absolute;
-    bottom: 10px;
+    bottom: 20%;
     left: 50%;
-    transform: translateX(-50%);
+    transform: translate(-50%, -50%);
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.buttons-container button {
+    padding: 10px;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.profile-details-container {
+    width: 50%;
 }
 
 .modal {
