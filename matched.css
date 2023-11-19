@@ -1,0 +1,30 @@
+/* Matched page styles*/
+
+/* Container for the images and header */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    flex-direction: column; /* Display images and header in a column */
+}
+
+/* Style for each image */
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    margin-top: 250px;
+}
+
+.image-container img {
+    max-width: 50%; /* Adjust as needed */
+    height: auto;
+}
+
+#matchedHeader {
+    text-align: center;
+    margin-top: 100px; /* Adjust the margin as needed */
+}
