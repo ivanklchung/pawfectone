@@ -4,6 +4,10 @@ body {
     margin: 0;
 }
 
+#container {
+    text-align:center;
+}
+
 header {
     background-color: #333;
     color: #fff;
@@ -99,3 +103,6 @@ form {
     display: flex;
     flex-direction: column;
 }
+
+
+
