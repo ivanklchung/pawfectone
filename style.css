@@ -5,7 +5,7 @@ body {
 }
 
 #container {
-    text-align:center;
+    text-align: center;
 }
 
 header {
@@ -47,7 +47,7 @@ nav a:hover {
 }
 
 .login-page {
-    padding: 20px
+    padding: 20px;
 }
 
 .home-page {
@@ -64,6 +64,7 @@ nav a:hover {
     bottom: 10px;
     left: 50%;
     transform: translateX(-50%);
+    margin-bottom: 20px; /* Add space at the bottom */
 }
 
 .modal {
@@ -104,5 +105,12 @@ form {
     flex-direction: column;
 }
 
+img.google {
+    width: 150px; /* Set the desired width */
+    height: auto; /* Maintain aspect ratio */
+}
 
-
+img.apple {
+    width: 150px; /* Set the desired width */
+    height: auto; /* Maintain aspect ratio */
+}

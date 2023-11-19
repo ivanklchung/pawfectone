@@ -15,6 +15,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 20px;
     margin-top: 250px;
 }
 
@@ -22,6 +23,8 @@
     width: 150px; /* Set a fixed width */
     height: 150px; /* Set a fixed height */
     object-fit: cover; /* Maintain aspect ratio while covering the box */
+    margin: 0 10px; /* Add margin between images */
+    animation: overlapAnimation 1.5s ease-in-out; /* Define the animation */
 }
 
 #matchedHeader {
@@ -30,15 +33,28 @@
     animation: slamAnimation 1s ease-in-out; /* Define the animation */
 }
 
-/* Keyframes for the animation */
+/* Keyframes for the slam animation */
 @keyframes slamAnimation {
     0% {
         transform: scale(1);
     }
     50% {
-        transform: scale(2); /* Scale up to 120% at the midpoint of the animation */
+        transform: scale(2); /* Scale up to 200% at the midpoint of the animation */
     }
     100% {
         transform: scale(1);
+    }
+}
+
+/* Keyframes for the overlap and separate animation */
+@keyframes overlapAnimation {
+    0% {
+        transform: translateX(0) rotate(0);
+    }
+    50% {
+        transform: translateX(-20px) rotate(30deg); /* Overlap and rotate at 30 degrees */
+    }
+    100% {
+        transform: translateX(0) rotate(0);
     }
 }
