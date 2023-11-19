@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pawfect One</title>
+    <link rel="icon" type="images/x-icon" href="images/icon.jpg">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <a href="welcome.html" id="logo">
+            <img class="logo" height="50px" width="50px" src="images/icon.jpg">
+        </a>
+        <nav>
+            <a href="login.html">Login</a>
+        </nav>
+    </header>
+    <div class="welcome-page">
+        <h1>Pawfect One</h1>
+        <img class="logo" height="100px" width="100px" src="images/icon.jpg">
+        <form>
+            <label for="username">Username:</label><br>
+            <input type="text" id="username" name="username"><br>
+            <label for="pwd">Password:</label><br>
+            <input type="password" id="pwd" name="pwd">
+          </form>
+        <button onclick="enterApp()">Login</button>
+    </div>
+
+    <script>
+        function enterApp() {
+            window.location.href = "home.html";
+        }
+    </script>
+</body>
+</html>
