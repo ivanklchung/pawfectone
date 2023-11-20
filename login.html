@@ -16,7 +16,7 @@
             <a href="login.html">Login</a>
         </nav>
     </header>
-    <div class="welcome-page">
+    <div class="login-page">
         <h1>Pawfect One</h1>
         <img class="logo" height="100px" width="100px" src="images/logo.png">
         <form>
@@ -26,12 +26,13 @@
             <input type="password" id="pwd" name="pwd">
           </form>
         <button onclick="enterApp()">Login</button>
-        <img class="google" height="100px" width="100px" src="images/google.png">
-        <form>
-        <img class="apple" height="100px" width="100px" src="images/apple.png">
-        <form>
+        <div>
+            <a>
+                <img class="google" height="100px" width="100px" src="images/google.png">
+                <img class="apple" height="100px" width="100px" src="images/apple.png">
+            </a>
+        </div>
     </div>
-
     <script>
         function enterApp() {
             window.location.href = "home.html";

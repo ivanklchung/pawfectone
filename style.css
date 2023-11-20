@@ -45,6 +45,36 @@ nav a {
 
 nav a:hover {
     background-color: #fcd5ce;
+    cursor: pointer;
+}
+
+.welcome-page {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 82vh;
+}
+
+.welcome-text {
+    text-align: left;
+    padding: 200px;
+}
+
+.welcome-title {
+    font-size: 3em; /* Adjust the font size as needed */
+}
+
+.welcome-image {
+    text-align: center;
+    position: relative;
+    padding: 50px;
+    right: 100px;
+}
+
+.welcome-image img {
+    width: 100%; /* Ensure the image takes the full width */
+    height: auto; /* Ensure the image scales proportionally */
+    position: relative;
 }
 
 .hidden {
@@ -80,6 +110,7 @@ nav a:hover {
     height: 50px;
     width: 50px;
     margin-right: 20px;
+    border-radius: 100%;
 }
 
 .chat-info-container {
