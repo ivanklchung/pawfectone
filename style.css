@@ -1,6 +1,11 @@
+@font-face {
+    font-family: JosefinSans;
+    src: url(fonts/Josefin_Sans/static/JosefinSans-Regular.ttf);
+}
+
 body {
-    font-family: Arial, sans-serif;
-    background-color: rgb(12, 221, 245);
+    font-family: JosefinSans;
+    background-color: #fcd5ce;
     margin: 0;
 }
 
@@ -9,8 +14,8 @@ body {
 }
 
 header {
-    background-color: #333;
-    color: #fff;
+    background-color: #ffb5a7;
+    color: black;
     padding: 15px;
     display: flex;
     justify-content: space-between;
@@ -21,7 +26,7 @@ header {
     font-size: 24px;
     font-weight: bold;
     text-decoration: none;
-    color: #fff;
+    color: black;
 }
 
 nav {
@@ -30,7 +35,7 @@ nav {
 }
 
 nav a {
-    color: #fff;
+    color: black;
     text-decoration: none;
     padding: 10px 15px;
     margin: 0 10px;
@@ -39,7 +44,7 @@ nav a {
 }
 
 nav a:hover {
-    background-color: #555;
+    background-color: #fcd5ce;
 }
 
 .hidden {
@@ -54,12 +59,11 @@ nav a:hover {
     display: flex;
     flex: 1;
     text-align: left;
-    padding: 20px;
-    height: 75vh;
+    height: 82vh;
 }
 
 .chats-area {
-    background-color: #f2f2f2;
+    background-color: #f8edeb;
     width: 30%;
     height: 100%;
     padding: 20px;
@@ -82,6 +86,7 @@ nav a:hover {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    gap: 5px;
 }
 
 .chat-name {
@@ -98,7 +103,7 @@ nav a:hover {
 }
 
 .swiping-area {
-    background-color: #e6e6e6;
+    background-color: #fcd5ce;
     width: 70%;
     height: 100%;
     padding: 20px;
@@ -117,12 +122,12 @@ nav a:hover {
 
 .photo-container {
     position: relative;
-    left: 20px;
+    left: 50px;
     width: 50%;
 }
 
 #profilePhoto {
-    width: 70%;
+    width: 80%;
     height: auto;
     margin: auto;
     position: relative;
@@ -130,20 +135,24 @@ nav a:hover {
 
 .buttons-container {
     position: absolute;
-    bottom: 20%;
+    bottom: 0;
     left: 50%;
     transform: translate(-50%, -50%);
     display: flex;
     align-items: center;
-    gap: 50px;
+    gap: 200px;
 }
 
-.buttons-container button {
-    padding: 10px;
-    background-color: #3498db;
-    color: #fff;
-    border: none;
-    cursor: pointer;
+#yesButton {
+    width: 100px;
+    height: auto;
+    transform: rotate(45deg);
+}
+
+#noButton {
+    width: 100px;
+    height: auto;
+    transform: rotate(-45deg);
 }
 
 .profile-details-container {

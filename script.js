@@ -13,19 +13,34 @@ function closeModal() {
     document.getElementById('formModal').style.display = 'none';
 }
 
+const profiles = [
+    {name: "Jack", description: "WOOF WOOF WOOF WOOF WOOF WOOF WOOF WOOF WOOF WOOF WOOF WOOF WOOF WOOF WOOF WOOF WOOF WOOF WOOF WOOF WOOF WOOF WOOF WOOF WOOF WOOF WOOF WOOF WOOF WOOF", photo: "photos/profile1.jpg"},
+    {name: "Brad", description: "i like dogs, they're very cool", photo: "photos/profile2.jpg"},
+    {name: "Tony", description: "Adventurer, Entrepreneur, and Fellow Dog-Lover", photo: "photos/profile3.jpg"}
+];
+
 function showProfile() {
-    const profilePhotos = ["photos/profile1.jpg", "photos/profile2.jpg", "photos/profile3.jpg"];
     const profilePhoto = document.getElementById('profilePhoto');
+    const profileName = document.getElementById('profileName');
+    const profileDescription = document.getElementById('profileDescription');
 
     // Shuffle the array to display photos in a random order
-    shuffleArray(profilePhotos);
+    restOfProfiles = profiles.slice(1);
+    shuffleArray(restOfProfiles);
 
-    if (currentIndex < profilePhotos.length) {
-        profilePhoto.src = profilePhotos[currentIndex];
+    if (currentIndex < profiles.length) {
+
+        let currentProfile = profiles[currentIndex];
+
+        profilePhoto.src = currentProfile.photo;
+        profileName.textContent = currentProfile.name;
+        profileDescription.textContent = currentProfile.description;
     } else {
         alert("No more profiles available!");
     }
 }
+
+showProfile();
 
 // Function to shuffle an array (Fisher-Yates algorithm)
 function shuffleArray(array) {

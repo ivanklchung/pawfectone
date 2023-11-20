@@ -4,14 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home - Pawfect One</title>
+    <link rel="icon" type="images/x-icon" href="images/icon.png">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
         <a href="welcome.html" id="logo">
-            <img class="logo" height="50px" width="50px" src="images/icon.jpg">
+            <img class="logo" height="50px" width="50px" src="images/logo.png">
         </a>
         <nav>
+            <a href="home.html">Match</a>
+            <a href="settings.html">Settings</a>
+            <a href="nearest-park.html">Nearby Parks</a>
             <a href="login.html">Logout</a>
         </nav>
     </header>
@@ -19,42 +23,42 @@
         <div class="chats-area">
             <h1 class="chats-title">Chats</h1>
             <div class="chat-container">
-                <img class="chat-icon" height="50px" width="50px" src="images/icon.jpg">
+                <img class="chat-icon" height="50px" width="50px" src="images/chat-profile-photo.jpg">
                 <div class="chat-info-container">
                     <h1 class="chat-name">Bob</h1>
                     <h6 class="chat-text">hi how r u ;)</h6>
                 </div>
             </div>
             <div class="chat-container">
-                <img class="chat-icon" height="50px" width="50px" src="images/icon.jpg">
+                <img class="chat-icon" height="50px" width="50px" src="images/chat-profile-photo.jpg">
                 <div class="chat-info-container">
                     <h1 class="chat-name">John</h1>
                     <h6 class="chat-text">send poodles</h6>
                 </div>
             </div>
             <div class="chat-container">
-                <img class="chat-icon" height="50px" width="50px" src="images/icon.jpg">
+                <img class="chat-icon" height="50px" width="50px" src="images/chat-profile-photo.jpg">
                 <div class="chat-info-container">
                     <h1 class="chat-name">Amy</h1>
                     <h6 class="chat-text">omg ur dog is so cute!</h6>
                 </div>
             </div>
             <div class="chat-container">
-                <img class="chat-icon" height="50px" width="50px" src="images/icon.jpg">
+                <img class="chat-icon" height="50px" width="50px" src="images/chat-profile-photo.jpg">
                 <div class="chat-info-container">
                     <h1 class="chat-name">Billy</h1>
                     <h6 class="chat-text">WOOF WOOF WOOF</h6>
                 </div>
             </div>
             <div class="chat-container">
-                <img class="chat-icon" height="50px" width="50px" src="images/icon.jpg">
+                <img class="chat-icon" height="50px" width="50px" src="images/chat-profile-photo.jpg">
                 <div class="chat-info-container">
                     <h1 class="chat-name">Daniel</h1>
                     <h6 class="chat-text">gawdamn thats a huge weiner (dog)</h6>
                 </div>
             </div>
             <div class="chat-container">
-                <img class="chat-icon" height="50px" width="50px" src="images/icon.jpg">
+                <img class="chat-icon" height="50px" width="50px" src="images/chat-profile-photo.jpg">
                 <div class="chat-info-container">
                     <h1 class="chat-name">Ted</h1>
                     <h6 class="chat-text">The canine truly is the most magnificant specimen!</h6>
@@ -64,16 +68,16 @@
         <div class="swiping-area">
             <div class="profile-container">
                 <div class="photo-container">
-                    <img id="profilePhoto" src="photos/profile1.jpg" alt="Profile Photo">
+                    <img id="profilePhoto" src="" alt="Profile Photo">
                 </div>
                 <div class="profile-details-container">
-                    <h1>Jack</h1>
-                    <p>WOOF WOOF WOOF WOOF WOOF WOOF WOOF WOOF WOOF WOOF WOOF WOOF WOOF WOOF WOOF WOOF WOOF WOOF WOOF WOOF WOOF WOOF WOOF WOOF WOOF WOOF WOOF WOOF WOOF WOOF </p>
+                    <h1 id="profileName"></h1>
+                    <p id="profileDescription"></p>
                 </div>
             </div>
             <div class="buttons-container">
-                <button onclick="dislikeProfile()">No</button>
-                <button onclick="likeProfile()">Yes</button>
+                <img id="noButton" onclick="dislikeProfile()" src="images/no-button.png">
+                <img id="yesButton" onclick="likeProfile()" src="images/yes-button.png">
             </div>
         </div>
         <div id="formModal" class="modal hidden">
